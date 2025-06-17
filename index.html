@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=MedievalSharp&display=swap" rel="stylesheet">
     <title>Document</title>
+    <style>
+    
+
+         
+    </style>
 </head>
 <body>
-    
+  <div class="fondo-video">
+    <video autoplay muted loop playsinline preload="auto" poster="fondo-preview.jpg" id="bg-video">
+      <source src="./assets/llamas.mp4" type="video/mp4"/>
+      Tu navegador no soporta video HTML5.
+    </video>
+  </div>
+  <header>
+      <h1 class="titulo">CATALUÑA EN LAS SOMBRAS</h1>
+        <nav>
+            <button data-page="inicio">Inicio</button>
+            <button data-page="rutas">Rutas Paranormales</button>
+            <button data-page="biblioteca">Biblioteca del MIsterio</button>
+            <button data-page="interrogante">???????</button>
+        </nav>
+    </header>
+    <main id="main-content">
+     
+ 
+    <!--El contenido se cargara aqui-->
+    </main>
+    <footer>
+<p><b>&copy; Copyright 2025 Realizado por JCT</b></p>
+    </footer>
+    <script src="./JS/app.js">
+      
+    </script>
 </body>
 </html>
