@@ -20,8 +20,9 @@
                     leyendas y fenómenos inexplicables.
                     <br><br>Adéntrate también en nuestra pequeña biblioteca, una colección exclusiva de libros y relatos de terror escritos por autores catalanes.
                     Cada historia es un eco del alma, un secreto enterrado en el tiempo, un susurro que cobra vida al caer la noche. <br><br>
-                    ¿Estás listo para adentarte en la oscuridad....?   </p>
-                </div>   
+                    </p>
+                </div>
+                <div class="libro666"><img src="./assets/Cataluña en la Oscuridad Antigua.PNG" alt="" class="imagendelibro"></div>   
             </div>`
     
     const rutasContent = 
