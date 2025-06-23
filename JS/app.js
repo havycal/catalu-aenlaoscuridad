@@ -1,4 +1,4 @@
-  document.addEventListener('DOMContentLoaded',function(){
+ /*document.addEventListener('DOMContentLoaded',function(){
     const mainContent = document.getElementById('main-content');
     const buttons = document.querySelectorAll('nav button');
 
@@ -24,7 +24,8 @@
                 </div>
                 <div class="libro666"><img src="./assets/Cataluña en la Oscuridad Antigua.PNG" alt="" class="imagendelibro"></div>   
             </div>`
-    
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     const rutasContent = 
                       ` <h2 class="h">Encuentra el camino hacia el Terror.......</h2>
                     <span class="galeria">
@@ -95,12 +96,13 @@
                         <img src="./assets/imgplaneta4.png" alt="" class="cainsolita">
                         <h6>imagenes utilizadas de la misma pagina</h6> 
                 </section>`
-               
-    
 
-const bibliotecaContent = "<p>En construcción</p>";
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////          
+
+const bibliotecaContent = ` 
+     `
+
 const interroganteContent = "<p>Secreto...</p>";
-
 
 function loadPage(page){
     let content = '';
@@ -115,15 +117,25 @@ function loadPage(page){
         break;
         default: content = inicioContent;
     }
+//////////////////////funciones para los apartados del main////////////////////////////
+       mainContent.innerHTML = content;
 
-mainContent.innerHTML = content;
-
-        if (page === 'rutas') {   // Verifica si la página actual es 'rutas'
-        setupRutasLogic();       // Si es así, inicializa la lógica específica para la página de rutas
-        }
+    if (page === 'rutas') {
+        paginaRutas();
     }
 
-    function setupRutasLogic() {   // Define la función que configura la lógica de interacción para la sección "rutas"
+    if (page === 'biblioteca') {
+         paginaBiblioteca(); 
+
+    }
+
+    if(page === tienda){
+        paginaTienda();
+    }
+
+    }
+
+    function paginaRutas() {   // Define la función que configura la lógica de interacción para la sección "rutas"
 
         const sectionIds = ['planeta', 'catalunya', 'rutas']; //Creo un array con los IDs de las secciones que se van a mostrar y ocultar dinámicamente.
 
@@ -153,8 +165,33 @@ mainContent.innerHTML = content;
             }
         });
         });
-    }
+    };
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function  paginaBiblioteca() {
+  const imagenes = document.querySelectorAll('.imgtapalibro img');
+  const parrafos = document.querySelectorAll('.libross p');
+
+  // Oculta todos los párrafos al inicio
+  parrafos.forEach(p => {
+    p.style.display = 'none';
+  });
+
+  // Asigna un evento a cada imagen
+  imagenes.forEach(img => {
+    img.addEventListener('click', () => {
+      parrafos.forEach(p => p.style.display = 'none'); // Oculta todos
+      const seccion = img.closest('.libross');
+      const parrafo = seccion.querySelector('p');
+      if (parrafo) {
+        parrafo.style.display = 'block';
+      }
+    });
+  });
+}
+
 loadPage('inicio');
    
  
 })
+*/
+
