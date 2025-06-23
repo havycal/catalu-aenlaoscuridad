@@ -1,4 +1,4 @@
- /*document.addEventListener('DOMContentLoaded',function(){
+ document.addEventListener('DOMContentLoaded',function(){
     const mainContent = document.getElementById('main-content');
     const buttons = document.querySelectorAll('nav button');
 
@@ -99,8 +99,272 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////          
 
-const bibliotecaContent = ` 
-     `
+const bibliotecaContent = ` <section class="contenedor-libreria">
+      <article class="libross">
+        <div class="imgtapalibro">
+          <img src="./assets/libreria/1.jpg" alt="">
+        </div>
+        <h4 class="hfour"> 100 escapades misterioses per Catalunya <br> Jordi Desvilar</h4>
+            <p>Un recorrido fascinante por 100 lugares en Cataluña poco conocidos, envueltos en misterio, leyendas e historias
+                sorprendentes. Desde rincones naturales hasta monumentos olvidados, Desvilar nos invita a descubrir sitios mágicos
+                que esconden secretos, fenómenos inexplicables y relatos que han pasado desapercibidos en la historia oficial catalana.
+            </p>
+      </article>
+
+      <article class="libross">
+        <div class="imgtapalibro">
+          <img src="./assets/libreria/2.jpg" alt="">
+        </div>
+          <h4 class="hfour">Aenigma Monserratus <br> Raúl Sacrest Castro</h4>
+              <p>Este libro se sumerge en el enigma espiritual y energético de la montaña de Montserrat, considerada un punto neurálgico
+                mágico-religioso. El autor explora su simbolismo, los fenómenos paranormales, la conexión telúrica, y su papel como centro
+                de fe, peregrinación y leyenda. Una visión holística de uno de los lugares más enigmáticos de Cataluña.
+              </p>
+      </article>
+
+      <article class="libross">
+        <div class="imgtapalibro">
+          <img src="./assets/libreria/3.jpg" alt="">
+        </div>
+          <h4 class="hfour"> Vivencias de un contactado <br> Luis José Grifol</h4>
+              <p>Testimonio personal de uno de los contactados más conocidos de España. Grifol relata sus experiencias de contacto con
+                inteligencias extraterrestres, centradas principalmente en Montserrat, donde afirma haber tenido avistamientos regulares
+                desde los años 70. El libro combina relatos místicos, mensajes cósmicos y reflexiones espirituales sobre la humanidad y
+                el universo.
+              </p>
+      </article>
+
+      <article class="libross">
+        <div class="imgtapalibro">
+          <img src="./assets/libreria/4.jpg" alt="">
+        </div>
+          <h4 class="hfour"> Bruixes <br> Mercè Foradada</h4>
+              <p> Dos voces femeninas en distintas épocas —una en la posguerra española y otra en el siglo XVII— narran su experiencia
+                de persecución por haber desafiado las normas sociales de su tiempo. El libro aborda la figura de la "bruja" como
+                símbolo de mujeres libres, condenadas por su diferencia. Una historia de sororidad, represión y resiliencia femenina.
+              </p>
+      </article>
+    
+      <article class="libross">
+        <div class="imgtapalibro">
+          <img src="./assets/libreria/5.jpg" alt="">
+        </div>
+          <h4 class="hfour">Cataluña de leyenda <br> César Alcalá</h4>
+              <p> Colección de relatos legendarios de todo el territorio catalán. Criaturas fantásticas, almas errantes, enigmas
+                históricos y pueblos encantados dan forma a esta guía de lo mágico en Cataluña. Ideal para amantes de las tradiciones 
+                orales y del folclore, este libro rescata mitos transmitidos durante siglos que aún perviven en la cultura popular.
+              </p>
+      </article>
+
+      <article class="libross">
+      <div class="imgtapalibro">
+        <img src="./assets/libreria/6.jpg" alt="">
+      </div>
+        <h4 class="hfour">Montserrat, montaña mágica <br> Miguel G. Arcil</h4>
+              <p> Una de las obras más emblemáticas sobre Montserrat y sus misterios. Arcil recopila décadas de leyendas: avistamientos
+                OVNI, presencia nazi en busca del Santo Grial, energías especiales, símbolos ocultos y fenómenos inexplicables. 
+                Esta edición revisada incorpora nuevos casos y teorías que refuerzan la visión de Montserrat como un enclave mágico 
+                único.
+              </p>
+      </article>
+
+      <article class="libross">
+        <div class="imgtapalibro">
+          <img src="./assets/libreria/7.png" alt="">
+        </div>
+          <h4 class="hfour">Cataluña, guía del terror <br> Miguel G. Arcil</h4>
+              <p>Una ruta por los rincones más espeluznantes de Cataluña. Desde hospitales abandonados y pueblos fantasma hasta 
+                apariciones sobrenaturales, el autor nos presenta una geografía del miedo, perfecta para quienes buscan historias de
+                terror en lugares reales. Cada lugar incluye contexto histórico y testimonios que amplifican el misterio.
+              </p>
+      </article>
+
+      <article class="libross">
+        <div class="imgtapalibro">
+          <img src="./assets/libreria/8.jpg" alt="">
+        </div>
+          <h4 class="hfour">El cielo bajo los pies <br> Elsa Plaza</h4>
+              <p>Novela histórica basada en el caso real de Enriqueta Martí, “la vampira del Raval”, en la Barcelona de principios del
+                siglo XX. A través de una protagonista ficticia, se revela una ciudad sombría marcada por la miseria, la trata de menores
+                y la corrupción policial. Plaza reconstruye con rigor el ambiente del Raval y sugiere una lectura crítica sobre los verdaderos
+                monstruos sociales.
+              </p>
+      </article>
+     
+      <article class="libross">
+        <div class="imgtapalibro">
+          <img src="./assets/libreria/9.jpg" alt="">
+        </div>
+          <h4 class="hfour">  El laberinto de los espíritus <br> Carlos Ruiz Zafón</h4>
+              <p> El laberinto de los espíritus es la novela que cierra la célebre tetralogía de El Cementerio de los Libros Olvidados. Ambientada en una Barcelona oscura 
+                y turbulenta de la posguerra, la historia está protagonizada por Alicia Gris, una mujer misteriosa y atormentada, convertida en investigadora por encargo 
+                del régimen franquista.
+              </p>
+      </article>
+
+      <article class="libross">
+        <div class="imgtapalibro">
+          <img src="./assets/libreria/10.jpg" alt="">
+        </div>
+          <h4 class="hfour"> El misterio de la calle Poniente <br> Fernando Gómez</h4>
+         
+              <p>Novela negra histórica inspirada en hechos reales de Barcelona en febrero de 1912: la desaparición de una niña de tres años destapa una red de
+                asesinatos infantiles relacionados con Enriqueta Martí, la “vampira del Raval”. Se ambienta en un contexto marcado por la miseria social, la Semana
+                Trágica y la corrupción policial, mezclando investigación criminal con un retrato oscuro de la sociedad de la época
+              </p>
+      </article>
+
+      <article class="libross">
+        <div class="imgtapalibro">
+          <img src="./assets/libreria/11.png" alt="">
+        </div>
+          <h4 class="hfour">Girona, tierra de mitos y leyendas <br> Joan de Déu Prats</h4>
+              <p>Recopilación de 58 relatos fantásticos y míticos del territorio de Girona. El autor combina documentación histórica con leyendas sobre íberos,
+                romanos, fantasmas, hadas, dracs y tesoros ocultos. Historias sobre menhires, dòlmens, bosques mágicos, sirenas y otros seres, en una obra amena
+                y ricamente documentada que rescata la tradición oral y el folclore local 
+              </p>
+      </article>
+      <article class="libross">
+
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/12.jpg" alt="">
+          </div>
+            <h4 class="hfour">Guía de la Catalunya misteriosa, mágica y paranormal <br> Josep M. Armengou</h4>
+              <p>Guía ilustrada que recorre los rincones más enigmáticos de Cataluña: fenómenos paranormales, mitos ancestrales, energías ocultas y leyendas populares. 
+                La estructura práctica permite realizar itinerarios temáticos y descubrir lo oculto tras edificios, parajes y pueblos llenos de historias olvidadas o 
+                desconocidas .
+              </p>
+      </article>
+        
+      <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/13.jpg" alt="">
+          </div>
+            <h4 class="hfour"> Guía de la Catalunya paranormal y mágica <br> Miguel G. Aracil</h4>
+              <p>Compilación de fenómenos paranormales que van desde bosques encantados, psicofonías, vampirismo y brujería hasta avistamientos OVNI. A través de 
+                anécdotas, testimonios y exploraciones sobre el terreno, Aracil nos introduce en una Cataluña alternativa, donde lo extraordinario convive con lo cotidiano
+              </p>
+      </article>
+
+      <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/14.jpeg" alt="">
+          </div>
+            <h4 class="hfour"> Guía de seres fantásticos de los Países Catalanes <br> Miguel G. Aracil</h4>
+              <p>Obra de unas 120 páginas que documenta los seres de la mitología catalana (Cataluña, Valencia y Baleares), incluyendo duendes, hadas, vampiros, ogros, 
+                genios y más. Se presenta como una enciclopedia accesible que explica características, localización geográfica y trasfondo cultural de estas criaturas mágicas 
+              </p>
+      </article>
+
+      <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/15.jpg" alt="">
+          </div>
+            <h4 class="hfour">Guía fantástica de Catalunya <br> Josep Guijarro</h4>
+                <p> Guía que mezcla historia, misterio y tradición: ovnis, templarios, cátaros, masonería, fantasmas, casas encantadas, lugares malditos y enigmas medievales. 
+                  Desde el Santo Grial hasta dólmens prehistóricos, Guijarro rescata relatos que oscilan entre lo mítico y lo investigado, invitando a descubrir una Cataluña 
+                  fantástica e insólita .
+                </p>
+      </article>
+
+      <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/16.jpg" alt="">
+          </div>
+            <h4 class="hfour"> Hadas, gnomos, sílfides y ondinas <br> Miguel G. Aracil</h4>
+              <p> Estudio riguroso y desplegado de las criaturas del mundo elemental: hadas, gnomos, silfos, ondinas, duendes, elfos, salamandras y otros seres mágicos. 
+                Describe sus características, misiones, modos de vida y por qué algunas especies han desaparecido. Incluye su presencia en España y Europa, con fotografías 
+                y leyendas tradicionales.
+              </p>
+      </article>
+     
+      <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/17.jpg" alt="">
+          </div>
+            <h4 class="hfour"> La mala dona <br> Marc Pastor</h4>
+              <p> Ambientada en la Barcelona de principios del siglo XX, esta novela negra se centra en una serie de desapariciones de niños, hijos de prostitutas, que no 
+                se atreven a denunciar. La noticia de un supuesto “monstruo” o vampiro que acecha en los barrios bajos se extiende rápidamente. El inspector Moisès Corvo, 
+                amante de la bebida y los burdeles, y su compañero Juan Malsano, se encargan del caso cuando aparece un cadáver cerca del Liceo. Madres aterradas, 
+                atmósfera opresiva y lo sobrenatural se combinan en una investigación cada vez más oscura
+              </p>
+      </article>
+
+      <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/18.jpg" alt="">
+          </div>
+            <h4 class="hfour"> Les històries naturals <br> Joan Perucho</h4>
+              <p>Novela fantástica ambientada durante la Primera Guerra Carlista (1833‑1840) en Barcelona. El científico naturalista Antoni de Montpalau inicia un viaje 
+                iniciático al descubrir a Onofre de Dip, un caballero medieval convertido en vampiro. Combina novela histórica, gótica y fantástica, explorando el choque 
+                entre racionalismo ilustrado y lo sobrenatural
+              </p>
+      </article>
+
+      <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/19.jpg" alt="">
+          </div>
+            <h4 class="hfour"> Les bruixes de Llers <br> Carles Fages de Climent</h4>
+              <p>Poemario publicado en 1924, con ilustraciones de Salvador Dalí y prólogo de Ventura Gassol. A través de versos y baladas ambientados en el Empordà, 
+                evoca mitos y leyendas sobre las brujas de Llers: hermanas míticas, pastorcillas, fuerza de los vientos mágicos, con un lenguaje lleno de color y misterio
+              </p>
+      </article>
+
+      <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/20.jpg" alt="">
+          </div>
+            <h4 class="hfour"> Leyendas del planeta Thámyris <br> Joan Manuel Gisbert</h4>
+              <p> Antología de leyendas fantásticas procedentes de Thámyris, un planeta descubierto por un astrónomo. El narrador recibe cartas que relatan relatos 
+                mitológicos: la Pirámide de la Noche Eterna, el origen de Mileterris, el continente insular, el Devorador de Sueños, Centilia o el Universo Inmóvil. 
+                Un mundo lejanamente parecido a la Tierra, donde luz y tinieblas combaten
+              </p>
+      </article>
+    
+    <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/21.jpg" alt="">
+          </div>
+            <h4 class="hfour">Los diarios de Enriqueta Martí <br> Antonio Gracia José (Pierrot)</h4>
+                <p> Se presenta como un diario ficticio de Enriqueta Martí, la conocida “vampira de Barcelona” detenida el 10 de marzo de 1912. Acusada de prostituir y 
+                  asesinar niños para extraer su sangre y grasa y fabricar pócimas, su historia sacudió la ciudad. Aunque contiene hechos reales extraídos de periódicos 
+                  de ya en 1911/12, el diario dramatiza su vida y actos
+                </p>
+      </article>
+
+      <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/22.jpg" alt="">
+          </div>
+            <h4 class="hfour"> Misteris de Catalunya per passar por <br> Sylvia Lagarda‑Mata</h4>
+              <p> Guía de terror e intriga dirigida a un público infantil/juvenil. Recoge 29 historias misteriosas, basadas en sucesos reales (o casi), acontecidos en 
+                distintas localidades de Catalunya a lo largo de los siglos. Cuentos escalofriantes ideales para introducir a los jóvenes en el folclore y las leyendas de 
+                la región
+              </p>
+      </article>
+
+      <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/23.jpg" alt="">
+          </div>
+            <h4 class="hfour"> Vampiros en Barcelona <br> Varios autores</h4>
+                <p> Antología compuesta por nueve relatos de vampiros ambientados en Barcelona. Cada autor explora diferentes rincones ocultos de la ciudad y sus criaturas 
+                  nocturnas. Misterio, lugares poco conocidos y ambiente gótico confluyen en estas historias que prometen sorprender al lector 
+                </p>
+      </article>
+
+      <article class="libross">
+          <div class="imgtapalibro">
+            <img src="./assets/libreria/24.jpg" alt="">
+          </div>
+            <h4 class="hfour">Veus de mort als Encants Vells <br>Sylvia Lagarda‑Mata</h4>
+              <p> Thriller histórico ambientado en la Barcelona de 1840. El famoso detective Auguste Dupin se enfrenta al caso de un asesino en serie que mata por libros 
+                antiguos. La novela mezcla asesinatos, librerías, ambiente negro y las primeras “crónicas mediáticas” de la ciudad. Premio Santa Eulàlia de novela de 
+                Barcelona 2024 
+              </p>
+      </article>
+      </section>`
 
 const interroganteContent = "<p>Secreto...</p>";
 
@@ -193,5 +457,5 @@ loadPage('inicio');
    
  
 })
-*/
+
 
