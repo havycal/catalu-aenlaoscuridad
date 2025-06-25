@@ -13,7 +13,7 @@
     
     const  inicioContent = ` 
             <div class="pergamino">  
-                <h2 class="h">Relatos de Terror, Secretos del Alma <br> y <br> Misterios de Cataluña</h2>
+                <h3 class="h">Relatos de Terror, Secretos del Alma <br> y <br> Misterios de Cataluña</h3>
                 <div class="contenido">
                     <p>Bienvenido a Catuluña en la oscuridad, un espacio dedicado a explorar el lado oculto de nuestra tierra. <br><br>
                     Aquí encontrarás tres empresas especializadas en rutas paranormales por Cataluña, listas para llevarte a escenarios reales de miedo,
@@ -27,7 +27,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     const rutasContent = 
-                      ` <h2 class="h">Encuentra el camino hacia el Terror.......</h2>
+                      ` <h3 class="h">Encuentra el camino hacia el Terror.......</h3>
                     <span class="galeria">
                         <div class="contenedor">
                             <img src="./assets/botplane.png" alt=""  class="botonimg"></div>
@@ -52,7 +52,7 @@
                         <br>
                         Perfecta para  viajeros diferentes y buscadores de lo inexplicable.
                         </p>
-                        <img src="./assets/imgcata.png" alt="" class="cainsolita" href="https://www.catalunyainsolita.com/barcelona-gotica/" target="_blank">
+                        <img src="./assets/imgcata.png" alt="" class="cainsolita">
                         <img src="./assets/imgcata1.png" alt="" class="cainsolita">
                         <img src="./assets/imgcata2.png" alt="" class="cainsolita">
                         <img src="./assets/imgcata3.png" alt="" class="cainsolita">
@@ -366,7 +366,41 @@ const bibliotecaContent = ` <section class="contenedor-libreria">
       </article>
       </section>`
 
-const interroganteContent = "<p>Secreto...</p>";
+const formularioContent = ` <form action="">
+            <h1>Página de contacto</h1>
+            <fieldset>
+                <legend>introduce tus datos</legend>
+                <label for="nombre">
+                    <span>Nombre:</span>
+                    <input type="text"
+                            name="name"
+                            id="name"
+                        required pattern="[a-zñçA-ZÑÇ]{2,30}"
+                        title="Este campo  acepta letras Mausculas y minusculas incluyendo ñÑ çÇ y solo de 2 a 30Caracteres"
+                        placeholder="Nombre y Apellidos">
+                </label>
+                <label for="email">
+                    <span>E-mail:</span>
+                    <input type="email"required
+                            name="email"
+                            id="email"
+                            placeholder="Ej:Correo@mail.com">
+                </label>
+                <label for="">Preguntas:</label>
+            <textarea class="areatexto" name="texto" id="texto"
+                    maxlength="500"
+                    placeholder="introduce los sintomas de tu mascota no mas de 500 caracteres "></textarea>
+
+            <div class="poli">
+                <label class="politicas">
+                        <span><a href="#">Aceptar</a>políticas</span>
+                        <input class="click" type="checkbox">
+                    </label>
+                    <button class="click1" type="submit">Enviar</button>
+                </fieldset>
+            </div>
+               
+        </form>`;
 
 function loadPage(page){
     let content = '';
@@ -377,7 +411,7 @@ function loadPage(page){
         break;
         case 'biblioteca': content = bibliotecaContent;
         break;
-        case 'interrogante': content = interroganteContent;
+        case 'formulario': content = formularioContent;
         break;
         default: content = inicioContent;
     }
@@ -393,8 +427,8 @@ function loadPage(page){
 
     }
 
-    if(page === tienda){
-        paginaTienda();
+    if(page === 'formulario'){
+        paginaFormulario();
     }
 
     }
@@ -452,6 +486,45 @@ function  paginaBiblioteca() {
     });
   });
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////
+function paginaFormulario() {
+    const form = document.querySelector('form');
+
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Evita que se recargue la página
+
+        const nombre = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const mensaje = document.getElementById('texto').value.trim();
+        const politicas = document.querySelector('.politicas input[type="checkbox"]').checked;
+
+        if (!politicas) {
+            alert("Debes aceptar las políticas antes de enviar.");
+            return;
+        }
+
+        const datosFormulario = {
+            nombre,
+            email,
+            mensaje,
+            fecha: new Date().toISOString()
+        };
+
+        // Guardamos en localStorage
+        let entradasPrevias = JSON.parse(localStorage.getItem('formularios')) || [];
+        entradasPrevias.push(datosFormulario);
+        localStorage.setItem('formularios', JSON.stringify(entradasPrevias));
+
+        alert("¡Formulario enviado y guardado localmente!");
+        form.reset(); // Limpia el formulario
+    });
+}
+
+    
+
+
 
 loadPage('inicio');
    
