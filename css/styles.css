@@ -489,6 +489,9 @@ ul li a:hover {box-shadow: 0 0.5em 0.5em -0.4em white;
         .contenedorContacto {width: 90%;padding: 10px;}
         address {font-size: 1rem;padding: 5px;}
         ol li {font-size: 0.9rem;}
+        .Catalunyainsolita{width: 80%;justify-content: center;}
+        .Catalunyainsolita img { max-width: 100%;height: auto;display: block;margin: 10px auto;}
+
 }
 
 @media(min-width:481px){
