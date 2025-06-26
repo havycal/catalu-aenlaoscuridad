@@ -1,35 +1,31 @@
-*,*::before, *::after{margin: 0;
-        padding: 0;
-     box-sizing: border-box;/*Mejor control de ancho/alto .*/
-    }
+*,*::before, *::after{margin: 0;padding: 0;
+                        box-sizing: border-box;/*Mejor control de ancho/alto .*/
+                        }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; /*  Elimina scroll horizontal */
-    background-color:fff;
-}
+html, body {width: 100%;
+        height: 100%;
+        overflow-x: hidden; /*  Elimina scroll horizontal */
+        background-color:fff;
+        }
 
 
 /* ----------------------ESTE ES EL APARTADO DEL FONDO DE LA PAGINA WEB----------------------------*/
-.fondo-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;         /*  Usar viewport width */
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    z-index: -1;
-}
+.fondo-video {position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;         /*  Usar viewport width */
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                z-index: -1;
+        }
 
-.fonvideo {
-    width: 100vw;         /* Ajuste exacto al ancho visible */
-    height: 100vh;
-    object-fit: cover;    /*  Ocupa todo, sin deformarse */
-}
+.fonvideo {width: 100vw;         /* Ajuste exacto al ancho visible */
+        height: 100vh;
+        object-fit: cover;    /*  Ocupa todo, sin deformarse */
+        }
 
 
 
@@ -48,8 +44,7 @@ header{width: 100%;height: auto;}
         background-clip: text;
         }
 
-nav{width: 100%;display: block;text-align: center;
-    margin-top: 20px;}
+nav{width: 100%;display: block;text-align: center;margin-top: 20px;}
 
 .botones{margin: 15px;text-align: center;width:150px;
         color:transparent;
@@ -60,24 +55,24 @@ nav{width: 100%;display: block;text-align: center;
         background: none;
         cursor: pointer;
         border: none;
-         background: linear-gradient(to right, white,#fd3131,white);
+        background: linear-gradient(to right, white,#fd3131,white);
         background-clip: text;
         
         }
 .botones:hover{color:transparent; 
-     background: linear-gradient(to right, #ffff1a,#efe4a4,#ffda05);
+        background: linear-gradient(to right, #ffff1a,#efe4a4,#ffda05);
         background-clip: text;            
-            }
+        }
 .botones:active{color: rgb(39, 38, 38); }
 /*---------------ESTE ES EL MAIN GLOBAL----------*/
 main{position: relative;
         z-index: 1;
         min-height: 100vh;
         text-align: center;
-       margin: 5px auto;
+        margin: 5px auto;
         width: 100%;
         height: auto;
-    }
+        }
 
 /* ------------------AQUI COMIENZA EL MAIN DEL INDEX-------------------------*/
 
@@ -85,18 +80,18 @@ main{position: relative;
         }
 
 .h{margin:15px auto;color: #f1f188;
-    font-family: "MedievalSharp", cursive;
-    font-weight: 400;
-    font-style: normal;
-    }
+        font-family: "MedievalSharp", cursive;
+        font-weight: 400;
+        font-style: normal;
+        }
 
 .contenido {margin: 5vw auto;width:90%;text-align: center;
-            justify-content: center;
-            color:  #ffda05; font-size: 16px;
-            font-family: "Cinzel", serif;
-            font-optical-sizing: auto;
-            font-weight: 200;
-            font-style: normal;}
+        justify-content: center;
+        color:  #ffda05; font-size: 16px;
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;}
             
 .libro666{width:30vw;height:30vh;margin: 20px auto;}
 .imagendelibro{width: 100%;height:100%;}
@@ -128,47 +123,45 @@ main{position: relative;
 .rutasmis:hover{opacity: 15%;}
 
 .hhh{color:#f1f188 ;margin: 5px;
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    }
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        }
   
 .parrafos{width: 100%;margin: 5px auto;
-            font-size: 20px;
-            color:transparent;
-            background: linear-gradient(to right,white,#faa4a4,white);
-            background-clip: text;
-            text-align: justify;}
+        font-size: 20px;
+        color:transparent;
+        background: linear-gradient(to right,white,#faa4a4,white);
+        background-clip: text;
+        text-align: justify;}
   
 .Catalunyainsolita{margin: 5px auto;text-align: center;
-                    font-family: "MedievalSharp", cursive;
-                    font-weight: 200;
-                    font-style: normal;
-                    font-size: 18px;
-                    }
+                        font-family: "MedievalSharp", cursive;
+                        font-weight: 200;
+                        font-style: normal;
+                        font-size: 18px;
+                        }
 
 /*---este es el orbe que va de un la do al otro de la pantalla------*/
-.Catalunyainsolita::before {
-                    border-radius: 90%;
-                    box-shadow: 0 0 6px 0 #000, 0 0 3px 0 #0000004d inset, 0 0 5px 0 #00000099 inset;
-                    content: "";
-                    display: block;
-                    left: 5px;
-                    height: 30px;
-                    top: 12px;
-                    transition: all 5s ease-in-out;
-                    width: 10px;
-                    background-position-x: center;
+.Catalunyainsolita::before {border-radius: 90%;
+                        box-shadow: 0 0 6px 0 #000, 0 0 3px 0 #0000004d inset, 0 0 5px 0 #00000099 inset;
+                        content: "";
+                        display: block;
+                        left: 5px;
+                        height: 30px;
+                        top: 12px;
+                        transition: all 5s ease-in-out;
+                        width: 10px;
+                        background-position-x: center;
                 }
 
-.Catalunyainsolita:hover::before {
-    background: linear-gradient(90deg, #ffffff00 0%, #ffffffff 100%);
-    box-shadow: 0 0 6px 0 #fff, 0 0 3px 0 #eee inset, 5px 0 3px 0 rgba(253, 168, 168, 0.5) inset;
-    content: "";
-    left: 100%;
-    opacity: 0;
-    width: 100%;
+.Catalunyainsolita:hover::before {background: linear-gradient(90deg, #ffffff00 0%, #ffffffff 100%);
+                                box-shadow: 0 0 6px 0 #fff, 0 0 3px 0 #eee inset, 5px 0 3px 0 rgba(253, 168, 168, 0.5) inset;
+                                content: "";
+                                left: 100%;
+                                opacity: 0;
+                                width: 100%;
                 }
 /*-------------------------------------------------------*/
 .pamigas{margin: 15px;text-align: center;padding: 10px;
@@ -182,18 +175,18 @@ main{position: relative;
         border: none;
         background: linear-gradient(to right, #fdf8f8,#ff0000,#f5eded);
         background-clip: text;
-    }
+        }
 .pamigas:hover{color:transparent; 
                 background: linear-gradient(to right, #ffff1a,#efe4a4,#ffda05);
                 background-clip: text;            
-            }
+        }
 .pamigas:active{color: rgb(39, 38, 38); }
 
 h6{color: #ffda05 ;
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;}
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;}
 
 /*------------------AQUI COMIENZA LA SECCION DE LA BIBLIOTECA-------------------------------*/
 
@@ -208,13 +201,13 @@ h6{color: #ffda05 ;
                         }
 
 .libross {height: auto;
-            border-radius: 25px;
-            font-family: 'Trebuchet MS', sans-serif;
-            background: linear-gradient(to right, #000000ab,#390101,#000000ab);
-            width: 90%;
-            max-width: 300px;
-            margin: 10px;
-            }
+        border-radius: 25px;
+        font-family: 'Trebuchet MS', sans-serif;
+        background: linear-gradient(to right, #000000ab,#390101,#000000ab);
+        width: 90%;
+        max-width: 300px;
+        margin: 10px;
+        }
 
 .libross img{ width:100%;
                 height: 100%;
@@ -223,7 +216,8 @@ h6{color: #ffda05 ;
                 object-fit: cover;
                 border-radius: 15px;
                 transition: transform 0.3 ease-in-out;
-            }
+                }
+
 .imgtapalibro{width: 200px; height: 300px;margin: 5px auto; overflow: hidden;cursor: pointer;
 }
 
@@ -233,19 +227,18 @@ article p{font-family: "MedievalSharp", cursive;
         color:#d1f8cf  ;
         object-fit: cover;
         letter-spacing: 2px;
-       
         margin: 5px auto;
         }
         
 
 h4{color:#f1f188 ;margin: 5px;
-    font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    width: 50%;
-    margin: 5px auto;
-    }
+        font-family: "Cinzel", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        width: 50%;
+        margin: 5px auto;
+        }
 
 .contenedor-parrafos{width: 13vw; margin: 5px auto;}
 .imgtapalibro img:hover{transform: scale(1.05);
@@ -372,67 +365,67 @@ footer {text-align: center;
         margin: 0;
         padding: 20px;
         width: 100%;
-      }
+        }
 
 .footer-container {display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap: 30px;
-                  }
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 30px;
+                }
 
 .imagenfoote {width: 150px;
-              height: 200px;
-              overflow: hidden;
-              position: relative;
-              transition: box-shadow 2s ease;
-              box-shadow: 0 1em 0.5em -0.5em rgba(173, 216, 230, 0.11);
-            }
+                height: 200px;
+                overflow: hidden;
+                position: relative;
+                transition: box-shadow 2s ease;
+                box-shadow: 0 1em 0.5em -0.5em rgba(173, 216, 230, 0.11);
+                }
 
 .imgfooter {width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 2s ease-in-out, opacity 1s ease-in-out;
-            opacity: 80%;
-            transform: translateY(5rem);
-          }
+                height: 100%;
+                object-fit: cover;
+                transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+                opacity: 80%;
+                transform: translateY(5rem);
+                }
 
 .imagenfoote:hover .imgfooter {transform: translateY(0rem);
                                 opacity: 50%;
-                              }
+                                }
 
 .imagenfoote:hover {box-shadow:
                         0 1em 0.5em -0.5em #0c0c0cf9,
                         0 1em 0.5em -0.5em #add8e648,
                         0 1em 0.5em -0.5em #4b177bd5;
-                    }
+                }
 
 .botonesNav {display: flex;
-              flex-direction: column;
-              align-items: center;
-              flex: 1;
-            }
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        }
 
 .botonfoter,a {font-family: "MedievalSharp", cursive;
-            font-weight: 100;
-            font-size: 1.3rem;
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: transparent;
-            background: linear-gradient(to right, white, #f7a1a1, white);
-            background-clip: text;
-            margin: 5px 0;
-          }
+                font-weight: 100;
+                font-size: 1.3rem;
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: transparent;
+                background: linear-gradient(to right, white, #f7a1a1, white);
+                background-clip: text;
+                margin: 5px 0;
+                }
 
 .botonfoter:hover {box-shadow: 0 0.5em 0.5em -0.4em white;
-                  transform: translateY(-0.25em);
-                  background: linear-gradient(to right, #ffff1a, #efe4a4, #ffda05);
-                  background-clip: text;
+                transform: translateY(-0.25em);
+                background: linear-gradient(to right, #ffff1a, #efe4a4, #ffda05);
+                background-clip: text;
                 }
 
 .derecho {margin-top: 15px;
-          font-size:1.1rem;
+        font-size:1.1rem;
         }
 
 .redes {display: flex;
@@ -440,18 +433,17 @@ footer {text-align: center;
         align-items:center;
         gap: 10px;
         width: 150px;
-      }
+       }
 
 .redes h5 {font-size: 1rem;
-          margin-bottom: 10px;
+        margin-bottom: 10px;
         }
 
 ul {list-style: none;
-          padding: 0;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         }
 
 ul li a {font-family: "MedievalSharp", cursive;
@@ -463,10 +455,10 @@ ul li a {font-family: "MedievalSharp", cursive;
               }
 
 ul li a:hover {box-shadow: 0 0.5em 0.5em -0.4em white;
-                      transform: translateY(-0.25em);
-                      background: linear-gradient(to right, #ffff1a, #efe4a4, #ffda05);
-                      background-clip: text;
-                    }
+                transform: translateY(-0.25em);
+                background: linear-gradient(to right, #ffff1a, #efe4a4, #ffda05);
+                background-clip: text;
+                }
 
 
 
