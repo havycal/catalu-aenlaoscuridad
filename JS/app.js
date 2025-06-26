@@ -1,6 +1,6 @@
  document.addEventListener('DOMContentLoaded',function(){
     const mainContent = document.getElementById('main-content');
-    const buttons = document.querySelectorAll('nav button');
+    const buttons = document.querySelectorAll('[data-page]');
 
     buttons.forEach(button => {
         button.addEventListener('click', function() {
@@ -366,41 +366,53 @@ const bibliotecaContent = ` <section class="contenedor-libreria">
       </article>
       </section>`
 
-const formularioContent = ` <form action="">
-            <h1>Página de contacto</h1>
-            <fieldset>
-                <legend>introduce tus datos</legend>
-                <label for="nombre">
-                    <span>Nombre:</span>
-                    <input type="text"
-                            name="name"
-                            id="name"
-                        required pattern="[a-zñçA-ZÑÇ]{2,30}"
-                        title="Este campo  acepta letras Mausculas y minusculas incluyendo ñÑ çÇ y solo de 2 a 30Caracteres"
-                        placeholder="Nombre y Apellidos">
-                </label>
-                <label for="email">
-                    <span>E-mail:</span>
-                    <input type="email"required
-                            name="email"
-                            id="email"
-                            placeholder="Ej:Correo@mail.com">
-                </label>
-                <label for="">Preguntas:</label>
-            <textarea class="areatexto" name="texto" id="texto"
-                    maxlength="500"
-                    placeholder="introduce los sintomas de tu mascota no mas de 500 caracteres "></textarea>
-
-            <div class="poli">
-                <label class="politicas">
-                        <span><a href="#">Aceptar</a>políticas</span>
-                        <input class="click" type="checkbox">
-                    </label>
-                    <button class="click1" type="submit">Enviar</button>
-                </fieldset>
-            </div>
-               
-        </form>`;
+const formularioContent = ` <h1 class="h">Página de contacto</h1>
+    <form action="">
+      <fieldset>
+        <legend>introduce tus datos</legend>
+        <label for="nombre">
+          <span>Nombre:</span>
+          <input type="text"
+          name="name"
+          id="name"
+          required pattern="[a-zñçA-ZÑÇ]{2,30}"
+          title="Este campo  acepta letras Mausculas y minusculas incluyendo ñÑ çÇ y solo de 2 a 30Caracteres"
+          placeholder="Nombre y Apellidos">
+        </label>
+        <label for="email">
+          <span>E-mail:</span>
+          <input type="email"required
+          name="email"
+          id="email"
+          placeholder="Ej:Correo@mail.com">
+        </label>
+        <label for="">Preguntas:</label>
+        <textarea class="areatexto" name="texto" id="texto"
+        maxlength="500"
+        placeholder="Escribe tus dudas y nosotros nospondremos en contacto lo mas antes pocible este espacio acepta hasta 500 carateres "></textarea>
+        
+        <div class="poli">
+          <label class="politicas">
+            <span><a href="#">Aceptar</a>políticas</span>
+            <input class="click" type="checkbox">
+          </label>
+          <button class="click1" type="submit">Enviar</button>
+        </fieldset>
+      </div>
+      
+    </form>
+    
+    <div class="contenedorContacto">                
+        <address>
+            <h2 class="hhh"> Contacto</h2>
+                <ol>
+                    <li>Nombre: Javier Calderòn</li>
+                    <li>Email: javie@gmail.com</li>
+                    <li>Telefono:123-456-789</li>
+                    <li>Direcciòn: c/ de los tormentos 33 local 1</li>
+                </ol>
+        </address>
+    </div> `;
 
 function loadPage(page){
     let content = '';
@@ -432,7 +444,7 @@ function loadPage(page){
     }
 
     }
-
+/////////////////////////////APARTADO PARA RUTAS PARANORMALES//////////////////////////////////
     function paginaRutas() {   // Define la función que configura la lógica de interacción para la sección "rutas"
 
         const sectionIds = ['planeta', 'catalunya', 'rutas']; //Creo un array con los IDs de las secciones que se van a mostrar y ocultar dinámicamente.
@@ -464,7 +476,7 @@ function loadPage(page){
         });
         });
     };
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////APARTADO DE LA BIBLIOTECA/////////////////////////////////////////////////////////////////////////////////////////
 function  paginaBiblioteca() {
   const imagenes = document.querySelectorAll('.imgtapalibro img');
   const parrafos = document.querySelectorAll('.libross p');
@@ -486,49 +498,45 @@ function  paginaBiblioteca() {
     });
   });
 }
-/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////APAETADO PARA EL FORMULARIO////////////////////////////////////////////////////////////////////////
 function paginaFormulario() {
-    const form = document.querySelector('form');
+  const form = document.querySelector('form');
 
-    if (!form) return;
+  if (!form) return;
 
-    form.addEventListener('submit', function(e) {
-        e.preventDefault(); // Evita que se recargue la página
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Evita recarga de la página
 
-        const nombre = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const mensaje = document.getElementById('texto').value.trim();
-        const politicas = document.querySelector('.politicas input[type="checkbox"]').checked;
+    const nombre = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const mensaje = document.getElementById('texto').value.trim();
+    const politicas = document.querySelector('.politicas input[type="checkbox"]').checked;
 
-        if (!politicas) {
-            alert("Debes aceptar las políticas antes de enviar.");
-            return;
-        }
+    if (!politicas) {
+      alert("Debes aceptar las políticas antes de enviar.");
+      return;
+    }
 
-        const datosFormulario = {
-            nombre,
-            email,
-            mensaje,
-            fecha: new Date().toISOString()
-        };
+    const datosFormulario = {
+      nombre,
+      email,
+      mensaje
+    };
 
-        // Guardamos en localStorage
-        let entradasPrevias = JSON.parse(localStorage.getItem('formularios')) || [];
-        entradasPrevias.push(datosFormulario);
-        localStorage.setItem('formularios', JSON.stringify(entradasPrevias));
+    let almacenados = localStorage.getItem('formularios');
+    let entradas = almacenados ? JSON.parse(almacenados) : [];
 
-        alert("¡Formulario enviado y guardado localmente!");
-        form.reset(); // Limpia el formulario
-    });
+    entradas.push(datosFormulario);
+
+    localStorage.setItem('formularios', JSON.stringify(entradas));
+
+    alert("¡Formulario enviado y guardado localmente!");
+    form.reset();
+  });
 }
 
-    
-
-
-
 loadPage('inicio');
-   
- 
+  
 })
 
 

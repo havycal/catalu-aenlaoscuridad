@@ -30,33 +30,41 @@
       <button data-page="inicio" class="botones">Inicio</button>
       <button data-page="rutas" class="botones">Rutas Paranormales</button>
       <button data-page="biblioteca" class="botones">Biblioteca del MIsterio</button>
-      <button data-page="formulario" class="botones">Contactar</button>
+      <button data-page="formulario" class="botones">Pagina de Contacto </button>
     </nav>
   </header>
   <main id="main-content">
+    
    
     <!--El contenido se cargara aqui-->
     </main>
     <footer>
-    
+      <div class="footer-container">
+
         <div class="imagenfoote">
-          <a href="#"> <img src="./assets/mongefooter.png" alt="" class="imgfooter"></a>
+          inicio
+          <a href="#"  data-page="inicio"><img src="./assets/mongefooter.png" alt="imagen de un monje señalando al frente" class="imgfooter"></a>
         </div>
-        <ul>
+        <nav class="botonesNav">
+           <button data-page="inicio" class="botonfoter">Inicio</button>
+          <button data-page="rutas" class="botonfoter">Rutas Paranormales</button>
+          <button data-page="biblioteca" class="botonfoter">Biblioteca del MIsterio</button>
+          <button data-page="formulario" class="botonfoter">Contactar</button>
+          <span class="derecho">Cataluña En la Oscuridad &copy; 2025 JCT</span>
+        </nav>
+        
+        <ul class="redes">
+          <h5>Visita nuestras redes sociales sociales</h5>
           <li><a href="#" class="fab fa-facebook-f"> </a></li>
           <li><a href="#"class="fab fa-twitter"> </a></li>
           <li><a href="#"class="fab fa-instagram"></a></li>
           <li><a href="#"class="fab fa-whatsapp"> </a></li>
           <li><a href="#"class="fab fa-tiktok"></a></li>
-          <li><a href="#">Aviso Legal</a></li>
-          <li><a href="#">Política de Privacidad</a></li>
         </ul>
-          <div >
-          <span >Cataluña En la Oscuridad &copy; 2025 JCT
-            </span>
-          </div>
-        
-    </footer>
+          
+      </footer>
+      </div>
+      
     <script src="./JS/app.js"></script>
 </body>
 </html>
