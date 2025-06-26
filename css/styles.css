@@ -464,9 +464,31 @@ ul li a:hover {box-shadow: 0 0.5em 0.5em -0.4em white;
 
 
 /*================ MEDIA QUERIES ================*/
-@media(min-width:320px){
-
- .parrafos{width: 80%;}
+@media (max-width: 480px) {
+        footer {padding: 10px;font-size: 1rem;}
+        .footer-container {flex-direction: column;align-items: center; gap: 20px;}
+        .imagenfoote {width: 120px;height: 160px;}
+        .botonesNav {width: 100%;align-items: center;}
+        .botonfoter, .botonfoter a {font-size: 1rem;text-align: center;}
+        .derecho {font-size: 1rem;text-align: center;margin-top: 10px;}
+        .redes {width: 100%;gap: 8px;}
+        .redes h5 {font-size: 0.9rem;}
+        ul {align-items: center;}
+        ul li a {font-size: 1.2rem;text-align: center;}
+        form {width: 90%;margin: 40px auto;font-size: 12px;}
+        fieldset {width: 95%;padding: 15px;}
+        legend {font-size: 18px;text-align: center;}
+        label {flex-direction: column;align-items: flex-start;}
+        span a {width: auto;font-size: 0.9rem;text-align: left;}
+        input {width: 100%;font-size: 12px;padding: 6px;}
+        .areatexto {width: 100%;font-size: 12px;height: 120px;}
+        .click {width: 40px;}
+        .click1 {width: 100%;font-size: 14px;padding: 6px;margin: 8px 0;}
+        .politicas {margin: 8px auto;text-align: center;}
+        .poli {flex-direction: column;width: 90%;align-items: center;}
+        .contenedorContacto {width: 90%;padding: 10px;}
+        address {font-size: 1rem;padding: 5px;}
+        ol li {font-size: 0.9rem;}
 }
 
 @media(min-width:481px){
@@ -474,8 +496,8 @@ ul li a:hover {box-shadow: 0 0.5em 0.5em -0.4em white;
         .contenido {width: 60%;}
         form {width: 90%;}
         .poli {width: 90%;}
-        .areatexto {width: 100%;}
-        .click1 {width: 100%;}
+        .areatexto {width: 90%;}
+        .click1 {width: 90%;}
         .contenedorContacto {width: 90%;}
 }
      
@@ -489,9 +511,7 @@ ul li a:hover {box-shadow: 0 0.5em 0.5em -0.4em white;
         .click1 {width: 90px;}
         .contenedorContacto {width: 80%;}
 }
-           
-
-
+ 
 @media(min-width:700px){
         .libross { width: 45%;}
          .parrafos{width: 60%;}
@@ -501,8 +521,6 @@ ul li a:hover {box-shadow: 0 0.5em 0.5em -0.4em white;
         .click1 {width: 100px;}
         .contenedorContacto {width: 60%;}
 }
-
-
 @media (min-width: 1024px) {
         .libross {width: 30%;}
         form {width: 40%;}
