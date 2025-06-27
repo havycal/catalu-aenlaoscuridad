@@ -445,8 +445,7 @@ function loadPage(page){
 
     }
 /////////////////////////////APARTADO PARA RUTAS PARANORMALES//////////////////////////////////
-    function paginaRutas() {   // Define la función que configura la lógica de interacción para la sección "rutas"
-
+    function paginaRutas() {  
         const sectionIds = ['planeta', 'catalunya', 'rutas']; //Creo un array con los IDs de las secciones que se van a mostrar y ocultar dinámicamente.
 
         const botones = document.querySelectorAll('.botonimg');//seleccionamos todos los botones por su clase
@@ -530,7 +529,7 @@ function paginaFormulario() {
 
     localStorage.setItem('formularios', JSON.stringify(entradas));
 
-    alert("¡Formulario enviado y guardado localmente!");
+    alert("¡formulario enviado pronto nos pondremos en contacto contigo gracias!");
     form.reset();
   });
 }
