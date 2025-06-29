@@ -1,4 +1,4 @@
- document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded',function(){
     const mainContent = document.getElementById('main-content');
     const buttons = document.querySelectorAll('[data-page]');
 
@@ -428,7 +428,7 @@ function loadPage(page){
         default: content = inicioContent;
     }
 //////////////////////funciones para los apartados del main////////////////////////////
-       mainContent.innerHTML = content;
+  mainContent.innerHTML = content;
 
     if (page === 'rutas') {
         paginaRutas();
