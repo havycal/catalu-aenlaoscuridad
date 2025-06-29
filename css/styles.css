@@ -39,8 +39,9 @@ header{width: 100%;height: auto;}
         font-weight: 100;
         font-style: normal;
         font-size: 50px;
-       -webkit-text-fill-color: transparent;
         background: linear-gradient(to right, #ffff1a,#efe4a4,#ffda05);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         color: black;
         }
@@ -140,7 +141,12 @@ main{position: relative;
         color:transparent;
         background: linear-gradient(to right,white,#faa4a4,white);
         background-clip: text;
-        text-align: justify;}
+        text-align: justify;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: black;
+
+}
   
 .Catalunyainsolita{margin: 5px auto;text-align: center;
                         font-family: "MedievalSharp", cursive;
@@ -176,11 +182,13 @@ main{position: relative;
         font-weight: 900;
         font-style: normal;
         font-size: 18px;
-        background: none;
         cursor: pointer;
         border: none;
+        color: black;
         background: linear-gradient(to right, #fdf8f8,#ff0000,#f5eded);
         background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         }
 .pamigas:hover{color:transparent; 
                 background: linear-gradient(to right, #ffff1a,#efe4a4,#ffda05);
