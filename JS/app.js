@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded',function(){
             loadPage(page);
         });
     });
-
     //CARGA INICIAL
     
     const  inicioContent = ` 
@@ -24,7 +23,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 </div>
                 <div class="libro666"><img src="./assets/Cataluña en la Oscuridad Antigua.PNG" alt="" class="imagendelibro"></div>   
             </div>`
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////A QUI COMIENZA LA SECCION DE RUTAS PARANORMALES///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     const rutasContent = 
                       ` <h3 class="h">Encuentra el camino hacia el Terror.......</h3>
@@ -97,7 +96,7 @@ document.addEventListener('DOMContentLoaded',function(){
                         <h6>imagenes utilizadas de la misma pagina</h6> 
                 </section>`
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////          
+///////////////////////A QUI COMIENZA LA BIBLIOTECA DEL MISTERIO////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////          
 
 const bibliotecaContent = ` <section class="contenedor-libreria">
       <article class="libross">
@@ -365,7 +364,7 @@ const bibliotecaContent = ` <section class="contenedor-libreria">
               </p>
       </article>
       </section>`
-
+//////////////////////////A QUI COMIENZA EL APARTADO DEL FORMULARIO//////////////////////////////////////////
 const formularioContent = ` <h1 class="h">Página de contacto</h1>
     <form action="">
       <fieldset>
@@ -444,7 +443,7 @@ function loadPage(page){
     }
 
     }
-/////////////////////////////APARTADO PARA RUTAS PARANORMALES//////////////////////////////////
+/////////////////////////////FUNCION PARA RUTAS PARANORMALES//////////////////////////////////
     function paginaRutas() {  
         const sectionIds = ['planeta', 'catalunya', 'rutas']; //Creo un array con los IDs de las secciones que se van a mostrar y ocultar dinámicamente.
 
@@ -475,7 +474,7 @@ function loadPage(page){
         });
         });
     };
-///////////////////////////////APARTADO DE LA BIBLIOTECA/////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////FUNCION DE LA BIBLIOTECA/////////////////////////////////////////////////////////////////////////////////////////
 function  paginaBiblioteca() {
   const imagenes = document.querySelectorAll('.imgtapalibro img');
   const parrafos = document.querySelectorAll('.libross p');
@@ -497,7 +496,7 @@ function  paginaBiblioteca() {
     });
   });
 }
-/////////////////////////APAETADO PARA EL FORMULARIO////////////////////////////////////////////////////////////////////////
+/////////////////////////FUNCION PARA EL FORMULARIO////////////////////////////////////////////////////////////////////////
 function paginaFormulario() {
   const form = document.querySelector('form');
 
@@ -529,7 +528,7 @@ function paginaFormulario() {
 
     localStorage.setItem('formularios', JSON.stringify(entradas));
 
-    alert("¡formulario enviado pronto nos pondremos en contacto contigo gracias!");
+    alert("¡Envío de formulario existoso, pronto nos pondremos en contacto contigo, gracias.....!");
     form.reset();
   });
 }
